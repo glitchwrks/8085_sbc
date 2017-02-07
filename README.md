@@ -2,9 +2,9 @@
 
 This repository contains the recovered EAGLE projects for the various PC boards designed as part of the Glitch Works 8085 SBC projects. These designs have been manufactured and tested and generally found to be functional; however, no warranty is made as to their fitness for any purpose. Please see the [LICENSE](https://github.com/glitchwrks/8085_sbc/blob/master/LICENSE) file for more information.
 
-If you are interested in obtaining a bare circuit board, kit, or assembled board, please contact us through GitHub or [the Glitch Works contact form](http://www.glitchwrks.com/contact/index.html). There's a chance we'll already have a bare board on hand, since later boards were ordered through [OSH Park](https://oshpark.com/) and resulted in three boards.
+If you are interested in obtaining a bare circuit board, kit, or assembled board, please contact us through GitHub or [the Glitch Works contact form](https://services.theglitchworks.net/ng/messages/new). There's a chance we'll already have a bare board on hand, since later boards were ordered through [OSH Park](https://oshpark.com/) and resulted in three boards.
 
-If you decide to produce any of these designs, or assemble a board from the provided schematics, please let us know through GitHub or [the Glitch Works contact form](http://www.glitchwrks.com/contact/index.html).
+If you decide to produce any of these designs, or assemble a board from the provided schematics, please let us know through GitHub or [the Glitch Works contact form](https://services.theglitchworks.net/ng/messages/new).
 
 ### 8085 SBC rev 1
 
