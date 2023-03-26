@@ -1,0 +1,34 @@
+
+                               ENGINEERING CHANGE ORDER
+
+
+
+        ECO NUMBER:     0007
+        DATE:           2023-03-24
+        BOARD NAME:     8085 Multi IO
+        BOARD REVISION: REV 0 (PROTOTYPE 1)
+
+
+        8255 PPI Reset Fix
+        ------------------
+
+        Revision  0  of the 8085 Multi IO board contains a routing error.  The
+        reset input to the 8255 PPI connects to 8085 SBC BUS pin 12, which  is
+        the *MASK input.  It should be connected to 8085 SBC BUS pin 11.
+
+            * Cut trace to 8085 SBC BUS (EXPANSION) pin 12 (bottom) above pins
+              4 and 6
+
+            * Jump 8255 reset input (pin 39, use via above cut) to 8085 SBC
+              BUS (EXPANSION) pin 11
+
+        Test  change  by  probing  8255  reset input (pin 39) and pressing the
+        reset button on the 8085 SBC.
+
+        This error has been corrected in the schematic, and will be  fixed  in
+        any  future  etches.   The  error  is  present  "in the wild" on a few
+        prototype boards that have been sold to hobbyists.
+
+        The glitchwrks.com writeup for the 8085  Multi  IO  board  includes  a
+        picture of this fix.
+
