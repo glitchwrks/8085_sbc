@@ -1,0 +1,63 @@
+
+                                   APPLICATION NOTE
+
+
+
+        APPNOTE NUMBER: 0001
+        DATE:           2023-03-27
+        BOARD NAME:     8085 SBC REV 2
+        BOARD REVISION: PRODUCTION
+
+
+        IC3 Jumper Options
+        ------------------
+
+        The 8085 SBC rev 2 includes several option jumpers for configuring the
+        device type installed in socket IC3.  This socket supports RAM, EPROM,
+        EEPROM, bytewide Flash, and NVRAM.
+
+        JP1  controls  socket IC3 pin 1.  JP1 pin 1 is the bottom pin when the
+        SBC is oriented with the expansion connector  down.   Pin  assignments
+        for JP1:
+
+            * Pin 1 connects to A14
+            * Pin 2 connects to socket IC3 pin 1
+            * Pin 3 connects to VCC
+
+        JP2  controls  socket  IC3 pin 26.  JP2 pin 1 is the leftmost pin when
+        the  SBC  is  oriented  with  the  expansion  connector   down.    Pin
+        assignments for JP2:
+
+            * Pin 1 connects to A13
+            * Pin 2 connects to socket IC3 pin 26
+            * Pin 3 connects to VCC
+
+        JP3  controls  IC3  pin 27.  JP3 pin 1 is the leftmost bottom pin when
+        the  SBC  is  oriented  with  the  expansion  connector   down.    Pin
+        assignments for JP3:
+
+            * Pin 1 connects to *WR
+            * Pin 3 connects to A14
+            * Pin 5 connects to VCC
+            * Even pins 2-6 (upper row) connect to socket IC3 pin 27
+
+        The following table documents the available configurations:
+
+        JP1 | JP2 | JP3 | Device(s) supported
+        -------------------------------------------------------------------
+        1-2 | 1-2 | 1-2 | 62256 32K SRAM type devices (28C256, NVRAM, etc.)
+        1-2 | 1-2 | 5-6 | 62256 32K SRAM type devices, write-protected
+        2-3 | 1-2 | 3-4 | 27256 32K EPROM
+        2-3 | 1-2 | 5-6 | 27128 16K EPROM
+        2-3 | N/A | 5-6 | 2764 8K EPROM
+        N/A | 2-3 | N/A | Intel 2732 type EPROM
+
+        Jumper  positions  marked  N/A  are  "don't  care"  and  can  be  left
+        completely open.
+
+        Devices smaller than 32K will repeat within the 0 - 32K lower  address
+        block.
+
+        27512  type  64K  x  8 EPROMs can be used in socket IC3 with the 27256
+        configuration; however, the lower 32K will not be accessible.
+
