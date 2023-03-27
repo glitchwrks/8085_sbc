@@ -14,6 +14,8 @@ This is the original PC board produced from the "mess of wires" that started my 
 
 An extension of the rev 1 design, this board incorporates more RAM and ROM, mounting holes, and a few other features. Read about the board [here](http://users.glitchwrks.com/~glitch/2011/10/29/sbc-rev-2).
 
+[AN0001 describes ROM jumpers](https://github.com/glitchwrks/8085_sbc/blob/master/8085_sbc_rev2/an0001_jumpers.txt) for socket IC3.
+
 ### I/O Board
 
 This board contains a Zilog SCC (two channel USART) and Intel 8255 PPI to provide two serial ports and 24 bits of parallel I/O. It stacks on top of the 8085 SBC board, PC-104 style. Read about design and testing [here](http://users.glitchwrks.com/~glitch/2017/04/24/8085-io-board). I wrote a [ROM monitor](https://github.com/glitchwrks/gwmon-80) that works with this board. This was on display at [HOPE Number Nine](http://hope.net/) with the vintage computer guys.
